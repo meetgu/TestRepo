@@ -25,7 +25,7 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    python src/HelloWorld.py
+    python HelloWorld.py
   displayName: 'Install dependencies'
 
 - script: |

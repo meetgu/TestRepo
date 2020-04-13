@@ -1,3 +1,4 @@
+
 # Python package
 # Create and test a Python package on multiple Python versions.
 # Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
@@ -27,7 +28,8 @@ steps:
     pip install pytest pytest-azurepipelines
     inputs:
     scriptSource: 'inline'
-    script: |
+    script:
+      #!/usr/bin/env python
       print('Hello world 1')
       print('Hello world 2')
     pytest

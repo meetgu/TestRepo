@@ -29,8 +29,5 @@ steps:
     inputs:
     scriptSource: 'inline'
     script:
-      #!/usr/bin/env python
-      print('Hello world 1')
-      print('Hello world 2')
     pytest
   displayName: 'pytest'

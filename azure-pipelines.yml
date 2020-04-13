@@ -28,6 +28,5 @@ steps:
     pip install pytest pytest-azurepipelines
     inputs:
     scriptSource: 'inline'
-    script:
     pytest
   displayName: 'pytest'

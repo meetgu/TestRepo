@@ -25,14 +25,14 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    inputs:
-    scriptSource: 'inline'
-    script: |
-      print(Hello world 1)
-      print('Hello world 2')
   displayName: 'Install dependencies'
 
 - script: |
     pip install pytest pytest-azurepipelines
     pytest
+    inputs:
+    scriptSource: 'inline'
+    script: |
+      print('Hello world 1')
+      print('Hello world 2')
   displayName: 'pytest'
